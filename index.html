@@ -8,282 +8,257 @@
 <link rel="stylesheet" href="styles.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+
 <header class="site-header">
-  <div class="container nav">
-    <a href="#top" class="logo">
-      <span class="logo-mark" aria-hidden="true">
-        <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4 16c4-8 12-10 20-6l4-4v20l-4-4c-8 4-16 2-20-6z" fill="currentColor"/>
-          <circle cx="22" cy="14" r="1.6" fill="#0b1020"/>
-        </svg>
-      </span>
-      <span class="logo-word">Growfish</span>
+  <a href="#top" class="logo">
+    <span class="logo-mark liquid-glass-strong" aria-hidden="true">
+      <svg viewBox="0 0 32 32" width="20" height="20" fill="none">
+        <path d="M4 16c4-8 12-10 20-6l4-4v20l-4-4c-8 4-16 2-20-6z" fill="currentColor"/>
+        <circle cx="22" cy="14" r="1.6" fill="#000"/>
+      </svg>
+    </span>
+    <span>Growfish</span>
+  </a>
+  <nav class="nav-pill liquid-glass" aria-label="Main">
+    <a href="#services">Services</a>
+    <a href="#approach">Process</a>
+    <a href="#results">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn btn-primary">Get Started
+      <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
     </a>
-    <nav class="nav-links" aria-label="Main">
-      <a href="#services">Services</a>
-      <a href="#approach">Approach</a>
-      <a href="#results">Results</a>
-      <a href="#about">About</a>
-      <a href="#contact" class="btn btn-ghost">Contact</a>
-    </nav>
-    <a href="#contact" class="btn btn-primary nav-cta">Get a Free Audit</a>
-    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
+  </nav>
+  <button class="menu-toggle liquid-glass" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </header>
 
 <main id="top">
+  <!-- HERO -->
   <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <span class="eyebrow">Paid Ads Agency · AI-Powered</span>
-        <h1>Small shop. <span class="grad">Big results.</span></h1>
-        <p class="lede">
-          We're a boutique paid ads team that turns ad spend into predictable growth.
-          Google, Meta, TikTok — managed by senior strategists, amplified by AI.
-        </p>
-        <div class="hero-ctas">
-          <a href="#contact" class="btn btn-primary">Get a free ad audit</a>
-          <a href="#services" class="btn btn-ghost">See what we do →</a>
-        </div>
-        <ul class="hero-stats">
-          <li><strong>4.2×</strong><span>avg. ROAS lift</span></li>
-          <li><strong>-38%</strong><span>avg. CPA reduction</span></li>
-          <li><strong>100%</strong><span>senior-led accounts</span></li>
-        </ul>
+    <svg class="hero-bg-svg" viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <radialGradient id="g1" cx="50%" cy="40%" r="60%">
+          <stop offset="0%" stop-color="#3a4a6e" stop-opacity="0.45"/>
+          <stop offset="50%" stop-color="#1a1f3a" stop-opacity="0.2"/>
+          <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="g2" cx="80%" cy="20%" r="40%">
+          <stop offset="0%" stop-color="#5a3a6e" stop-opacity="0.35"/>
+          <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="g3" cx="20%" cy="80%" r="40%">
+          <stop offset="0%" stop-color="#3a6e5a" stop-opacity="0.3"/>
+          <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="1400" height="900" fill="url(#g1)"/>
+      <rect width="1400" height="900" fill="url(#g2)"/>
+      <rect width="1400" height="900" fill="url(#g3)"/>
+    </svg>
+    <div class="hero-overlay"></div>
+    <div class="hero-fade"></div>
+
+    <div class="hero-inner">
+      <div class="hero-badge liquid-glass">
+        <span class="tag-new">New</span>
+        <span>Introducing AI-powered paid media.</span>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="card card-float card-1">
-          <div class="card-row"><span class="dot dot-g"></span>Google Ads</div>
-          <div class="metric"><span>ROAS</span><strong>5.8×</strong></div>
-          <div class="bar"><i style="width:82%"></i></div>
-        </div>
-        <div class="card card-float card-2">
-          <div class="card-row"><span class="dot dot-m"></span>Meta Ads</div>
-          <div class="metric"><span>CPA</span><strong>-42%</strong></div>
-          <div class="bar"><i style="width:68%"></i></div>
-        </div>
-        <div class="card card-float card-3">
-          <div class="card-row"><span class="dot dot-t"></span>TikTok Ads</div>
-          <div class="metric"><span>CTR</span><strong>3.1%</strong></div>
-          <div class="bar"><i style="width:74%"></i></div>
-        </div>
+
+      <h1 id="hero-heading">
+        <span class="word" style="animation-delay:.0s">Small</span>
+        <span class="word" style="animation-delay:.1s">shop.</span>
+        <span class="word" style="animation-delay:.2s">Big</span>
+        <span class="word" style="animation-delay:.3s">results.</span>
+      </h1>
+
+      <p class="lede">Stunning creative. Profitable spend. Run by senior strategists, amplified by AI. This is paid media, wildly reimagined.</p>
+
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-glass liquid-glass-strong">Get Started
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+        <a href="#approach" class="btn btn-ghost">Watch the Film
+          <svg class="arrow" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </a>
       </div>
-    </div>
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Google Ads</span><span>·</span>
-        <span>Meta Ads</span><span>·</span>
-        <span>TikTok Ads</span><span>·</span>
-        <span>YouTube</span><span>·</span>
-        <span>LinkedIn</span><span>·</span>
-        <span>Programmatic</span><span>·</span>
-        <span>Performance Max</span><span>·</span>
-        <span>Retargeting</span><span>·</span>
-        <span>Google Ads</span><span>·</span>
-        <span>Meta Ads</span><span>·</span>
-        <span>TikTok Ads</span><span>·</span>
-        <span>YouTube</span><span>·</span>
-        <span>LinkedIn</span><span>·</span>
-        <span>Programmatic</span><span>·</span>
-      </div>
+
+      <ul class="hero-stats">
+        <li><strong>4.2×</strong><span>avg. ROAS lift</span></li>
+        <li><strong>-38%</strong><span>avg. CPA reduction</span></li>
+        <li><strong>100%</strong><span>senior-led accounts</span></li>
+      </ul>
     </div>
   </section>
 
+  <!-- PARTNERS -->
+  <section class="partners">
+    <span class="badge liquid-glass">Trusted by the teams behind</span>
+    <div class="partners-row">
+      <span>Luminary</span>
+      <span>Arcline</span>
+      <span>Helix</span>
+      <span>Northwind</span>
+      <span>Meridian</span>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS (video section) -->
+  <section id="approach" class="section-video">
+    <div class="bg-gradient"></div>
+    <div class="fade-top"></div>
+    <div class="fade-bottom"></div>
+    <div class="inner">
+      <span class="badge liquid-glass">How It Works</span>
+      <h2>You dream it. <br/>We ship it.</h2>
+      <p>Share your goals. Our team handles the rest — audits, creative, campaigns, optimization. All in days, not quarters.</p>
+      <a href="#contact" class="btn btn-glass liquid-glass-strong">Get Started
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- SERVICES (chess rows) -->
   <section id="services" class="section">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">What we do</span>
-        <h2>Paid media that actually pays back.</h2>
+        <span class="badge liquid-glass">Capabilities</span>
+        <h2>Pro media. Zero complexity.</h2>
         <p>Full-funnel paid advertising, built on data and sharpened with AI. Every account gets a senior strategist — no junior hand-offs.</p>
       </div>
-      <div class="services-grid">
-        <article class="service">
-          <div class="service-icon">G</div>
-          <h3>Google Ads</h3>
-          <p>Search, Shopping, Performance Max, and YouTube campaigns engineered for profitable scale.</p>
-          <ul>
-            <li>Keyword &amp; SKU strategy</li>
-            <li>Conversion tracking audits</li>
-            <li>Bid &amp; budget optimization</li>
-          </ul>
-        </article>
-        <article class="service">
-          <div class="service-icon">M</div>
-          <h3>Meta Ads</h3>
-          <p>Facebook &amp; Instagram campaigns that blend creative testing with tight audience strategy.</p>
-          <ul>
-            <li>Creative testing frameworks</li>
-            <li>Advantage+ &amp; custom audiences</li>
-            <li>CAPI &amp; pixel hygiene</li>
-          </ul>
-        </article>
-        <article class="service">
-          <div class="service-icon">T</div>
-          <h3>TikTok Ads</h3>
-          <p>Native-first creative and Spark Ads built to earn attention, not just impressions.</p>
-          <ul>
-            <li>UGC &amp; creator sourcing</li>
-            <li>Hook-based creative testing</li>
-            <li>TikTok Pixel &amp; events API</li>
-          </ul>
-        </article>
-        <article class="service">
-          <div class="service-icon">AI</div>
-          <h3>AI-Powered Strategy</h3>
-          <p>We use AI to move faster: forecasting, creative iteration, audience modeling, and reporting.</p>
-          <ul>
-            <li>AI creative concepting</li>
-            <li>Predictive budget pacing</li>
-            <li>Automated insights &amp; alerts</li>
-          </ul>
-        </article>
-        <article class="service">
-          <div class="service-icon">◎</div>
-          <h3>Landing Pages &amp; CRO</h3>
-          <p>Ad clicks mean nothing without conversion. We build and test pages that close the loop.</p>
-          <ul>
-            <li>Page builds &amp; A/B testing</li>
-            <li>Heatmaps &amp; session analysis</li>
-            <li>Offer &amp; messaging iteration</li>
-          </ul>
-        </article>
-        <article class="service">
-          <div class="service-icon">📈</div>
-          <h3>Analytics &amp; Tracking</h3>
-          <p>Clean data in, confident decisions out. GA4, server-side tracking, and dashboards you'll actually use.</p>
-          <ul>
-            <li>GA4 &amp; GTM setup</li>
-            <li>Server-side tracking</li>
-            <li>Looker Studio dashboards</li>
-          </ul>
-        </article>
+
+      <div class="chess-row">
+        <div class="chess-text">
+          <h3>Designed to convert. <br/>Built to perform.</h3>
+          <p>Every dollar is intentional. We study what's working across thousands of top accounts — then build your campaigns to outperform them.</p>
+          <a href="#contact" class="btn btn-glass liquid-glass-strong">Learn more
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+        <div class="chess-visual liquid-glass">
+          <div class="inside"><span class="icon-large">G</span></div>
+        </div>
+      </div>
+
+      <div class="chess-row reverse">
+        <div class="chess-text">
+          <h3>It gets smarter. <br/>Automatically.</h3>
+          <p>Your campaigns evolve continuously. AI monitors every click, scroll, and conversion — then optimizes in real time. No stale creative. Ever.</p>
+          <a href="#contact" class="btn btn-glass liquid-glass-strong">See how it works
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+        <div class="chess-visual liquid-glass">
+          <div class="inside"><span class="icon-large">AI</span></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="approach" class="section section-alt">
-    <div class="container approach-grid">
-      <div>
-        <span class="eyebrow">How we work</span>
-        <h2>Enterprise-level rigor, boutique-level care.</h2>
-        <p>No bloated retainers, no junior account managers, no 40-slide decks. Just a focused team running your accounts like they own them.</p>
-        <a href="#contact" class="btn btn-primary">Start the conversation</a>
-      </div>
-      <ol class="steps">
-        <li>
-          <span class="step-num">01</span>
-          <h4>Audit &amp; align</h4>
-          <p>We dig into your accounts, tracking, and goals — then tell you straight what's working and what isn't.</p>
-        </li>
-        <li>
-          <span class="step-num">02</span>
-          <h4>Plan &amp; build</h4>
-          <p>A 90-day roadmap, cleaned-up tracking, new creative, and a fresh campaign architecture.</p>
-        </li>
-        <li>
-          <span class="step-num">03</span>
-          <h4>Test &amp; scale</h4>
-          <p>Weekly iteration on creative, audiences, and bids. We scale what works, kill what doesn't.</p>
-        </li>
-        <li>
-          <span class="step-num">04</span>
-          <h4>Report &amp; refine</h4>
-          <p>Clear dashboards and weekly updates — no jargon, no smoke, just numbers that matter.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <section id="results" class="section">
+  <!-- WHY US (4-col grid) -->
+  <section class="section">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Results</span>
+        <span class="badge liquid-glass">Why Us</span>
+        <h2>The difference is everything.</h2>
+      </div>
+      <div class="features-grid">
+        <article class="feature-card liquid-glass">
+          <div class="feature-icon liquid-glass-strong">⚡</div>
+          <h4>Days, Not Months</h4>
+          <p>Kickoff to live campaigns at a pace that redefines fast.</p>
+        </article>
+        <article class="feature-card liquid-glass">
+          <div class="feature-icon liquid-glass-strong">◎</div>
+          <h4>Obsessively Crafted</h4>
+          <p>Every detail considered. Every ad refined.</p>
+        </article>
+        <article class="feature-card liquid-glass">
+          <div class="feature-icon liquid-glass-strong">📊</div>
+          <h4>Built to Convert</h4>
+          <p>Strategy informed by data. Decisions backed by performance.</p>
+        </article>
+        <article class="feature-card liquid-glass">
+          <div class="feature-icon liquid-glass-strong">🛡</div>
+          <h4>Transparent by Default</h4>
+          <p>You own every account, asset, and data point.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS / RESULTS -->
+  <section id="results" class="stats-wrap">
+    <div class="container">
+      <div class="section-head">
+        <span class="badge liquid-glass">Results</span>
         <h2>Numbers that move the business.</h2>
-        <p>A sample of what senior-led, AI-assisted paid media looks like in practice.</p>
       </div>
-      <div class="results-grid">
-        <article class="result-card">
-          <span class="tag">DTC · Apparel</span>
-          <h3>From break-even to 4.8× ROAS in 90 days</h3>
-          <p>Rebuilt Meta account structure, launched UGC creative engine, and cleaned CAPI events.</p>
-          <div class="result-metrics">
-            <div><strong>+312%</strong><span>revenue</span></div>
-            <div><strong>4.8×</strong><span>ROAS</span></div>
-            <div><strong>-29%</strong><span>CPA</span></div>
+      <div class="stats-card liquid-glass">
+        <div class="stats-grid">
+          <div><strong>200+</strong><span>Accounts scaled</span></div>
+          <div><strong>98%</strong><span>Client retention</span></div>
+          <div><strong>3.2×</strong><span>More conversions</span></div>
+          <div><strong>5 days</strong><span>Avg. time to launch</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="badge liquid-glass">What They Say</span>
+        <h2>Don't take our word for it.</h2>
+      </div>
+      <div class="testimonials-grid">
+        <article class="testimonial liquid-glass">
+          <blockquote>"A complete rebuild of our paid program in five days. They treated our budget like their own, and the results showed up almost immediately."</blockquote>
+          <div class="who">
+            <strong>Sarah Chen</strong>
+            <span>CEO, Luminary</span>
           </div>
         </article>
-        <article class="result-card">
-          <span class="tag">B2B SaaS</span>
-          <h3>Cut cost per demo in half</h3>
-          <p>Moved spend from broad awareness to intent-based search &amp; LinkedIn with tight retargeting.</p>
-          <div class="result-metrics">
-            <div><strong>-52%</strong><span>CPL</span></div>
-            <div><strong>2.3×</strong><span>SQLs</span></div>
-            <div><strong>38%</strong><span>close rate</span></div>
+        <article class="testimonial liquid-glass">
+          <blockquote>"Conversions up 4× in a quarter. Growfish found leverage in our accounts that two previous agencies had missed entirely."</blockquote>
+          <div class="who">
+            <strong>Marcus Webb</strong>
+            <span>Head of Growth, Arcline</span>
           </div>
         </article>
-        <article class="result-card">
-          <span class="tag">E-comm · Home</span>
-          <h3>Scaled Google Ads 3× without breaking efficiency</h3>
-          <p>Performance Max feed overhaul plus bespoke search campaigns for high-margin SKUs.</p>
-          <div class="result-metrics">
-            <div><strong>3.1×</strong><span>spend</span></div>
-            <div><strong>+18%</strong><span>ROAS</span></div>
-            <div><strong>-11%</strong><span>CPC</span></div>
+        <article class="testimonial liquid-glass">
+          <blockquote>"They didn't just run our ads — they became an extension of our growth team. Transparent, sharp, and genuinely invested."</blockquote>
+          <div class="who">
+            <strong>Elena Voss</strong>
+            <span>Brand Director, Helix</span>
           </div>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="about" class="section section-alt">
-    <div class="container about-grid">
-      <div>
-        <span class="eyebrow">About Growfish</span>
-        <h2>Built for brands that need a partner, not a vendor.</h2>
-        <p>We started Growfish because we got tired of watching ad budgets disappear into agency black boxes. We're small on purpose — every client gets a senior strategist, transparent reporting, and an honest answer when something isn't working.</p>
-        <p>Today we partner with DTC, e-commerce, and B2B teams who want paid media run like a growth lever, not a line item.</p>
-        <div class="value-props">
-          <div><strong>Senior-led</strong><span>No junior hand-offs. Ever.</span></div>
-          <div><strong>Transparent</strong><span>You own every account &amp; asset.</span></div>
-          <div><strong>AI-forward</strong><span>We use the tools so you don't have to.</span></div>
-          <div><strong>Accountable</strong><span>Weekly updates, monthly reviews.</span></div>
-        </div>
-      </div>
-      <div class="quote-card">
-        <blockquote>
-          "Growfish rebuilt our paid program from scratch and treated our budget like their own. In one quarter they turned an underperforming account into our biggest growth channel."
-        </blockquote>
-        <div class="quote-by">
-          <div class="avatar" aria-hidden="true">JM</div>
-          <div>
-            <strong>Jordan M.</strong>
-            <span>Head of Growth, DTC Brand</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- CTA FOOTER -->
+  <section id="contact" class="cta-section">
+    <div class="bg-gradient" style="position:absolute; inset:0; z-index:0; background: radial-gradient(ellipse 70% 50% at 50% 40%, rgba(100,120,180,0.18), transparent 70%), radial-gradient(ellipse 50% 40% at 30% 80%, rgba(140,100,160,0.12), transparent 70%); filter: saturate(0.6);"></div>
+    <div class="fade-top" style="position:absolute; top:0; left:0; right:0; height:200px; background:linear-gradient(to bottom, #000, transparent); z-index:1; pointer-events:none;"></div>
+    <div class="fade-bottom" style="position:absolute; bottom:0; left:0; right:0; height:200px; background:linear-gradient(to top, #000, transparent); z-index:1; pointer-events:none;"></div>
 
-  <section id="contact" class="section section-cta">
-    <div class="container cta-grid">
-      <div>
-        <span class="eyebrow">Free ad audit</span>
-        <h2>Let's see what your accounts could do.</h2>
-        <p>Send us a note and we'll get back within one business day with a short audit of your paid media.</p>
-        <ul class="contact-list">
-          <li><span>✉</span> hello@growfishdigital.com</li>
-          <li><span>⌁</span> Remote · US &amp; EU clients</li>
-        </ul>
+    <div class="inner">
+      <h2>Your next<br/>growth lever starts here.</h2>
+      <p>Book a free ad audit. See what senior-led, AI-assisted paid media can do.</p>
+      <div class="cta-buttons">
+        <a href="#audit-form" class="btn btn-glass liquid-glass-strong">Book a Call
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+        <a href="#services" class="btn btn-primary">View Services</a>
       </div>
-      <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('.form-success').hidden = false; this.reset();">
+
+      <form id="audit-form" class="contact-form liquid-glass" onsubmit="event.preventDefault(); this.querySelector('.form-success').hidden = false; this.reset();">
         <div class="field">
           <label for="name">Name</label>
           <input id="name" name="name" type="text" required />
@@ -312,49 +287,20 @@
         <button class="btn btn-primary" type="submit">Request free audit</button>
         <p class="form-success" hidden>Thanks — we'll be in touch within one business day.</p>
       </form>
+
+      <footer class="site-footer">
+        <div class="footer-row">
+          <span>© <span id="year"></span> Growfish Digital</span>
+          <div>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="mailto:hello@growfishdigital.com">Contact</a>
+          </div>
+        </div>
+      </footer>
     </div>
   </section>
 </main>
-
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <a href="#top" class="logo logo-footer">
-        <span class="logo-mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32" width="24" height="24" fill="none"><path d="M4 16c4-8 12-10 20-6l4-4v20l-4-4c-8 4-16 2-20-6z" fill="currentColor"/><circle cx="22" cy="14" r="1.6" fill="#0b1020"/></svg>
-        </span>
-        <span class="logo-word">Growfish</span>
-      </a>
-      <p class="footer-tag">Small shop. Big results.</p>
-    </div>
-    <div class="footer-cols">
-      <div>
-        <h5>Services</h5>
-        <a href="#services">Google Ads</a>
-        <a href="#services">Meta Ads</a>
-        <a href="#services">TikTok Ads</a>
-        <a href="#services">Analytics</a>
-      </div>
-      <div>
-        <h5>Company</h5>
-        <a href="#about">About</a>
-        <a href="#results">Results</a>
-        <a href="#approach">Approach</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div>
-        <h5>Connect</h5>
-        <a href="#">LinkedIn</a>
-        <a href="#">Twitter / X</a>
-        <a href="mailto:hello@growfishdigital.com">Email</a>
-      </div>
-    </div>
-  </div>
-  <div class="container footer-bottom">
-    <small>© <span id="year"></span> Growfish Digital. All rights reserved.</small>
-    <small><a href="#">Privacy</a> · <a href="#">Terms</a></small>
-  </div>
-</footer>
 
 <script src="script.js"></script>
 </body>
